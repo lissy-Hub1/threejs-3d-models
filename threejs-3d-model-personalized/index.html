@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>three.js - FBX TV Animation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="tv-frame">
+        <div id="three-container">
+            <!-- Three.js renderizará aquí -->
+            <div class="scanlines"></div>
+            <div class="crt-effect"></div>
+            <div class="tv-reflection"></div>
+        </div>
+        <div class="tv-controls">
+            <div class="tv-knob"></div>
+            <div class="tv-knob"></div>
+            <div class="tv-knob"></div>
+        </div>
+    </div>
+    
+    
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "../build/three.module.js",
+                "three/addons/": "../jsm/"
+            }
+        }
+    </script>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
